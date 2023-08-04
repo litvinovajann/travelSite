@@ -5,6 +5,14 @@ import { AiFillCloseCircle } from "react-icons/ai"
 import { TbGridDots } from "react-icons/tb"
 
 export default function Navbar() {
+
+    const [active, setActive] = React.useState('navBar');
+    const showNav = () => {
+        setActive('navBar activeNavBar')
+    }
+    const hideNav = () => {
+        setActive('navBar')
+    }
     return (
         <section className="navBarSection">
             <header className="header flex">
@@ -17,7 +25,7 @@ export default function Navbar() {
                         
                     </a>
                 </div>
-                <div className="navBar">
+                <div className={active}>
                             <ul className="navLists flex">
                                 <li className="navItem">
                                     <a href="#" className="navLink">Home</a>
@@ -44,11 +52,11 @@ export default function Navbar() {
                                     <a href="#">BOOK NOW</a>
                                 </button>
                             </ul>
-                    <div className="closeNavBar">
+                    <div onClick={hideNav} className="closeNavBar">
                         <AiFillCloseCircle className="icon"/>
                     </div>
                 </div>
-               <div className="toggleNavBar">
+               <div onClick={showNav} className="toggleNavBar">
                 <TbGridDots className="icon" />
                </div>
             </header>    

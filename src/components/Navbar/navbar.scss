@@ -16,14 +16,25 @@
     position: fixed;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     background: var(--whiteColorDeam);
     width: 100%;
     padding: 1rem;
     z-index: 1000;
+    box-shadow: 0 2px 4px rgba(2 ,15, 29, 0.904);
 
     .logo {
-        color: var (--blackColor)
+        color: var(--blackColor);
+        font-weight: 600;
+        cursor: pointer;
+        align-items: center;
+        justify-content: center;
+
+        .icon {
+            font-size: 25px;
+            color: var(--PrimaryColor);
+            transform: translateY(5px);
+        }
     }
 
     @media  screen and (max-width:768px) {
@@ -34,10 +45,12 @@
             width: 80%;
             border-radius: 1rem;
             left: 50%;
-            top: 6rem;
+            top: -500rem;
+            padding: 1rem;
+            z-index: 2000;
             transform: translate(-50%);
             box-shadow: 0 2px 4px rgba(2 ,15, 29, 0.904);
-            transition: .3s ease-in-out;
+            transition: .5s ease-in-out;
 
             .navLists {
                 flex-direction: column;
@@ -85,5 +98,20 @@
 
         }
         
+        .activeNavBar {
+            top: 6rem;
+        }
+    }
+
+    .toggleNavBar {
+        .icon {
+            font-size: 25px;
+            color: var(--PrimaryColor);
+        
+            &:hover.icon {
+                color: var(--SecondaryColor);
+            }
+
+        }
     }
   }
