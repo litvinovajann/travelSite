@@ -44,7 +44,7 @@ export default function Home() {
                     <div className="priceInput">
                         <div className="label_total flex">
                             <label htmlFor="price">Max price:</label>
-                            <h3 className="total">$5000</h3>
+                            <h3 className="total">$13990</h3>
                         </div>
                         <div className="input flex">
                             <input type="range" max="5000" min="750" />
