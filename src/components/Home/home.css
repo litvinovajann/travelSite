@@ -52,7 +52,7 @@
   margin: auto;
   z-index: 100;
   font-weight: 800;
-  color: var(--whiteColor);
+  color: white;
 }
 .home .homeContent .textDiv {
   padding: 2rem 0;
@@ -68,7 +68,7 @@
 .home .cardDiv {
   position: relative;
   padding: 2rem 1rem;
-  background-color: var(--whiteColor);
+  background-color: white;
   border-radius: 10px;
   gap: 1rem;
 }

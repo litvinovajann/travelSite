@@ -65,13 +65,8 @@ export default function Main() {
                             <HiOutlineClipboardCheck className="icon" />
                           </button>
                         </div>
-
-                    </div>
-                    
-                    
-                    
+                    </div>         
                     )
-
                   }) }
             </div>
         </section>
