@@ -151,8 +151,23 @@
         }
     }
 
+    .homeFooterIcons{
+        width: 100%;
+        justify-content: space-evenly;
 
+        .icon{
+            margin: 0 5px;
+            font-size: 20px;
+            font-weight: 600;
+
+            &:hover {
+                color: var(--PrimaryColor);
+            }
+        }
+    }
 
   }
   
+  //Media queries ===========================>
+
   
