@@ -82,3 +82,30 @@ input {
 body {
   background: var(--bodyColor);
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+/**media queriers **/
+
+@media screen and (min-width: 1240px) {
+
+  .container {
+    width: 80% !important;
+    margin: auto !important;
+  }
+
+  .section {
+    padding: 6rem 0 4rem;
+  }
+
+}
+
+@media screen and (min-width: 2560px) { 
+
+    body {
+      zoom: 1.7;
+    }
+
+}

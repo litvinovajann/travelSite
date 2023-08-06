@@ -2,6 +2,9 @@ import React from "react"
 import './main.css'
 import "../../server.js"
 import {HiOutlineLocationMarker, HiOutlineClipboardCheck} from "react-icons/hi"
+import Aos from "aos"
+import 'aos/dist/aos.css'
+
 
 export default function Main() {
     const [data, setData] = React.useState([])
@@ -10,9 +13,11 @@ export default function Main() {
         .then(res => res.json())
         .then(data => setData(data.destinations))
     }, [])
-    console.log(data)
+    React.useEffect(()=> {
+      Aos.init({duration:2000})
+      }, [])
     return (
-        <section className="main container">
+        <section data-aos="fade-up" className="main container">
             <div className="secTitle">
                 <h3 className="title">
                     Most visited destinations
@@ -24,7 +29,7 @@ export default function Main() {
                     return (
 
 
-                    <div key={destination.id} className="singleDestination">
+                    <div key={destination.id} data-aos="fade-up" className="singleDestination">
                         <div className="imageDiv">
                           <img src={destination.img} alt=""></img>
                         </div>
