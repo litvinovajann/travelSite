@@ -51,7 +51,6 @@ export default function Main() {
                             <div className="grade">
                               <span>
                                 {destination.grade}
-                                <small>+1</small>
                               </span>
                             </div>
                             <div className="price">
